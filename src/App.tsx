@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from './theme/theme';
@@ -12,6 +12,8 @@ import EditCatPage from './pages/EditCatPage';
 
 // Add global styles
 import './styles/global.css';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <MainLayout>
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/cats" element={<CatListPage />} />
               <Route path="/cats/:id" element={<CatDetailPage />} />
               <Route path="/cats/new" element={<AddCatPage />} />

@@ -37,7 +37,7 @@ const Header: React.FC = () => {
     <Box sx={{ textAlign: 'center' }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', p: 2 }}>
         <Typography variant="h6" sx={{ my: 2 }}>
-          FerrellCatManager
+          CatManager
         </Typography>
         <IconButton 
           color="inherit" 
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
                 alignItems: 'center',
               }}
             >
-              FerrellCatManager
+              CatManager
             </Typography>
           </Box>
 

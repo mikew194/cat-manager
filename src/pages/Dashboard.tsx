@@ -8,8 +8,8 @@ import RecentCats from '../components/Dashboard/RecentCats';
 import AdoptionStats from '../components/Dashboard/AdoptionStats';
 
 const Dashboard: React.FC = () => {
-  const { cats, loading } = useCatContext();
-
+  const { cats } = useCatContext();
+  
   return (
     <Box sx={{ animation: 'fadeIn 0.5s ease-in-out' }}>
       <Box
@@ -27,7 +27,7 @@ const Dashboard: React.FC = () => {
             Dashboard
           </Typography>
           <Typography variant="body1" color="text.secondary">
-            Welcome to FerrellCatManager. Here's an overview of your cats.
+            Welcome to the CatManager App. Here's an overview of your cats.
           </Typography>
         </Box>
         <Button

@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
         >
           <Box sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             <Typography variant="h6" gutterBottom>
-              FerrellCatManager
+              CatManager
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Making cat management simple and effective
@@ -45,13 +45,13 @@ const Footer: React.FC = () => {
             }}
           >
             <Box sx={{ display: 'flex', gap: 2 }}>
-              <MuiLink href="#" color="inherit" underline="hover">
+              <MuiLink href="/about" color="inherit" underline="hover">
                 About
               </MuiLink>
               <MuiLink href="#" color="inherit" underline="hover">
                 Privacy
               </MuiLink>
-              <MuiLink href="#" color="inherit" underline="hover">
+              <MuiLink href="/contact" color="inherit" underline="hover">
                 Contact
               </MuiLink>
             </Box>
@@ -66,9 +66,9 @@ const Footer: React.FC = () => {
           align="center"
           sx={{ mt: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 0.5 }}
         >
-          Made with <Heart size={16} color="red" fill="red" /> by Ferrell Shelters
+          Made with <Heart size={16} color="red" fill="red" /> by the Local Animal Shelters
           <br />
-          © {currentYear} FerrellCatManager. All rights reserved.
+          © {currentYear} CatManager. All rights reserved @2025.
         </Typography>
       </Container>
     </Box>

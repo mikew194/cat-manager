@@ -29,7 +29,7 @@ const AddCatPage: React.FC = () => {
       setTimeout(() => {
         navigate(`/cats/${newCat.id}`);
       }, 1500);
-    } catch (error) {
+    } catch {
       setIsSubmitting(false);
       setSnackbar({
         open: true,
